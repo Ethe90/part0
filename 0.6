@@ -1,0 +1,10 @@
+// 0.6: Uusi muistiinpano
+
+sequenceDiagram
+participant browser
+participant server
+
+browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+activate server
+server-->>browser: 201 Created [{content: "srs", date: "2024-02-16T11:15:40.204Z"}]
+deactivate server
